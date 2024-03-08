@@ -423,7 +423,7 @@
                 return this._div;
             };
             title.update = function () {
-                this._div.innerHTML = '<h3>Digital Agroforestry Farm - Lestari Sejahtera</h3>';
+                this._div.innerHTML = '<h4>Digital Agroforestry Farm - Lestari Sejahtera</h4>';
             };
             title.addTo(map);
       
@@ -433,7 +433,7 @@
         var baseLayers = {
         '<img src="legend/PetaniPenggarap_6.png" /> Petani Penggarap': cluster_PetaniPenggarap_6,'<img src="legend/SampelTanaman_5.png" /> Sampel Tanaman': cluster_SampelTanaman_5,'<img src="legend/BatasLahan_4.png" /> Batas Lahan': layer_BatasLahan_4,'<img src="legend/KelompokTaniHutan_3.png" /> Kelompok Tani Hutan': layer_KelompokTaniHutan_3
         };
-        L.control.layers(overlays, baseLayers, {collapsed:false}).addTo(map);
+        L.control.layers(overlays, baseLayers).addTo(map);
         setBounds();
 
         var i = 0;
