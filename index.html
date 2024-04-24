@@ -18,7 +18,7 @@
             margin: 0;
         }
         </style>
-        <title>Digital Agroforestry Farm</title>
+        <title>Map&Data - RUMAH PETAni</title>
     </head>
     <body>
         <div id="map">
@@ -422,10 +422,7 @@
                 this.update();
                 return this._div;
             };
-            title.update = function () {
-                this._div.innerHTML = '<h4>Digital Agroforestry Farm</h4>';
-            };
-            title.addTo(map);
+           
       
         var overlays = {
         "OpenStreetMap": layer_OpenStreetMap_2,"Google Satellite": layer_GoogleSatellite_1,"Esri Topo World": layer_EsriTopoWorld_0,
@@ -465,7 +462,7 @@
             onAdd:function(map){
                 var img = L.DomUtil.create('img');
                 img.src = 'Logo.png';
-                img.style.width = '80px';
+                img.style.width = '100px';
                 return img;
                 },
                 onRemove:function(map){},
